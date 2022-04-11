@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(219, 198, 185);
+}
+
+h1 {
+
+}
+
+span {
+    background-color: rgb(227, 245, 161);
+}
+
+h3 {
+    color:rgb(44, 44, 185); 
+}
+label {
+    color: green;
+}
+table {
+    border-collapse: collapse; border: 1px;
+}
+th {
+    background-color: #ccc;
+}
+td {
+    background-color: rgb(204, 226, 245);
+}
