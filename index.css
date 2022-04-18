@@ -1,27 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Grape+Nuts&family=Mulish:wght@200&family=Neucha&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: rgb(219, 198, 185);
+    background-image: url(bg-dark-4770.jpg);
+    color: #eee;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    white-space: normal;
 }
 
-h1 {
 
+.container {
+    max-width: 600px;
+    margin:auto;
+    padding-top: 30px;
 }
 
-span {
-    background-color: rgb(227, 245, 161);
+
+
+a {
+    font-size: 18px;
+    font-weight: 500;
+    color: aliceblue; 
 }
 
-h3 {
-    color:rgb(44, 44, 185); 
+a:visited {
+    color: rgb(253, 253, 253);
 }
+
+a:hover {
+    color: aqua;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active {
+    color: orange;
+}
+
+
+
+.card {
+    border: 1px;
+    border-radius: 25px;
+    background: rgb(202, 160, 160);
+    margin-bottom: 20px;
+    border-style: solid;
+    padding: 15px 40px;
+}
+
+.info {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.info-txt {
+    margin-left: 40px;
+    font-style: italic;
+}
+
+.info-txt h4 {
+    margin-top: 15px;
+}
+
+@media (max-width: 650px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.table th {
+    background-color: rgb(127, 110, 110);  
+    border: 1px solid black;
+}
+
+.table td {
+    background-color: rgb(77, 90, 99);
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  
+}
+
+
 label {
-    color: green;
+    text-decoration: underline;
 }
-table {
-    border-collapse: collapse; border: 1px;
+
+.btn {
+    background-color: rgb(38, 47, 55);
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 5px 15px;
+    font-family: inherit;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-bottom: 10px;
 }
-th {
-    background-color: #ccc;
+
+.btn:hover {
+    background-color:rgb(166, 185, 202);
+    opacity: .8;
 }
-td {
-    background-color: rgb(204, 226, 245);
+
+.image {
+    
+    padding-left: 40px;
+    width:fit-content;
 }
+
+.hobbies {
+    margin: none;
+    padding: none;
+}
+
+.hobbies li {
+    margin-left: 20px;
+    list-style: none;
+    text-decoration: underline 2px solid rgb(255, 255, 255);
+}
+
+
+.avatar {
+    width: 200px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 25);
+    margin: 0%;
+}
+
+h2, h3, h1{
+    margin-bottom: 10px;
+}
+
+.bg-white {
+    background-color: rgb(32, 81, 87);
+}
+
+.bg-red {
+    background-color: rgb(73, 46, 47);
+}
+
+.bg-blue {
+    background-color: rgb(30, 66, 66);
+}
+
+.bg-green {
+    background-color: rgb(39, 79, 65);
+}
+
+
+
+.form h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .form-group {
+    margin: right 20px;
+    width: 50%;
+}
+
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 650px) {
+    .form-row {
+        display: block;
+    }
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    }
+
+.form-group label{
+    display: block;
+    font-size: 14px;
+    color: inherit;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: rgb(255, 255, 255);
+    padding: 15px 0 10px;
+    outline: none;
+}
+

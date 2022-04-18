@@ -7,30 +7,53 @@
     <meta name="keywords" content="andriukov, html, engineer, resume">
     <meta name="description" content="Это сайт-резюме Станислава Андрюкова">
     <title>Сайт-резюме</title>
+   
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
-    <img src="https://lh3.googleusercontent.com/fife/AAWUweXfJMFl2Hq6JWZK3RAvq1ClGHL6MM6wbivNcoEojWZO8UZMK0EA73VO41cJlAD_Yexnw7Yxbn-0FRHukx0_hFFfux0_Vud9sHUvviCUKGZBai3Mj_dR_exStKQcO2Ga2OVgYKF293A1XO_NEkg5JX2Otkbsd7ofFZsLFcdjXGLZhGnSeu-5MVtVaF7EVRBfAmFM7-qnYQ_i5XCsBcUKilN0RKPvUCWtLJbf_JRyj9MQlOciwasDJAuah5PCF8T-_UXwrIUvW1BpCD29xJoXAdmoUpZ2SULA-9IdsKeDS5jlxUf7EYmTLdD73-3uVVFFuKuqr5GdnEYWPAKrH4LqlQzad80PWCODVlGoGDbkbhvtTxyGv5nj8DoGv1pNNJZq5uPxeOOVB5nMXE7ZALd9CxZa82PEf0YCf90dJUT-tw4x2wSx274sdmMyiPfFdnsmaY3MesvZFvJ_68cuZV581uH9FaPi5J_g5Q4-9_ufVOxDa8dvzd6HRadPEfeCAZhVrbn-Yibqv3RodOafsRzGmggda8_99cNd1lH47LRYjh4Otw3FfzJ9bI2Wgsjw_j6rF5CQEV2DExudepuyKBiHByc4cHAU2Cr-VCcsVAvVjZd2gQuYu1uEjgj-C0KXpOxZ7nc0oxLH4PBzBn8oRVoqVn9gx15NwlUXurcUBWXCb4LnWGCMnwmsLxyjb55-1pupzVvrCgz6e5NK5OlOsEW6Ktc0fkC5EwZZAofxycjUqwJrR8JeU2FGbh16XAVoK-fs1SMbVXMcGCaHzoc0Tvo=w1920-h937" alt="Станислав Андрюков" width="250">
-  <h1>Станислав Андрюков</h1>  
-  <p> Выпускник <u><span>Тюменского Индустриального Университета</u></span>, <strong>инженер-проектировщик</strong> нефтегазовой отрасли</p>
-  <p> Увлекаюсь <em>чтением, просмотром художественных фильмов, путешествиями и активым отдыхом</em></p>
+    <div class="container">
 
-  <h2>Список соцсетей:</h2>
-  <a href="https://vk.com/allcatsarebeautifuul" target="_blank">VK</a>
+    <div class="info">
+    <img src="img.jpg" alt="Станислав Андрюков" class="avatar">
+
+  <header id="header" class="info-txt">
+    <h1>Станислав Андрюков</h1>  
+  <p> Выпускник <u>Тюменского Индустриального Университета</u>, <strong>инженер-проектировщик</strong></p>
+
+  <h4>Список соцсетей:</h4>
+
+  <a href="https://vk.com/allcatsarebeautifuul" target="_blank">VK</a> 
   |
   <a href="https://t.me/starburst96" target="_blank">telegram</a>
+  |
+  <a href="tel:+79224767355">Телефон</a>
 
+</header>
+</div>
+
+<div class="card bg-red">
+    <h2>Навыки и умения:</h2>
+    <p>Хорошее знание английского языка (B2), коммуникабелен и ответственнен. Умение пользоваться пакетом программ MS Office, Google документы и Google таблицы. Также прошел онлайн-курс HTML & CSS.</p>
+</div>
+
+
+<div class="card hobbies bg-white">
   <h2>Список хобби:</h2>
-  <ol> 
+  <ul> 
       <li>Спорт</li>
       <li>Научно-популярная литература</li>
       <li>Музыка</li>
-      <li>Кулинария</li>
-    </ol>
+      <li>Путешествия</li>
+      <li>Программирование</li>
+    </ul>
+</div>
+
+<div class="card bg-green">
 <h2>Опыт работы:</h2>
-    <table border="1px">
+
+    <table class="table">
         
-        <thead>
             <tr>
                 <th><u>Название</u></th>
                 <th><u>Должность</u></th>
@@ -43,36 +66,47 @@
             </tr>
             <tr>
                 <td>Гипротюменнефтегаз</td>
-                <td>инженер-проектировщик 3 категории</td>
+                <td>Инженер-проектировщик</td>
                 <td>2021</td>
             </tr>
             <tr>
                 <td>НПП Симплекс</td>
-                <td>Техник ЛНК</td>
+                <td>Инженер-дефектоскопист</td>
                 <td>2022</td>
             </tr>
-        </thead>
+        </th>
     </table>
-
-  
-  <h3>Связатья со мной:</h3>
-  <form>
-
-    <div>
-    <label for="name">Ваше имя:</label>
-    <input type="name" id="neme" placeholder="Введите имя">
 </div>
-<div>
+
+
+ 
+  <form action="/" class="form">
+
+    <h3>Связатья со мной:</h3>
+    <div class="form-row">
+ <div class="form-group">
+
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" placeholder="Введите имя">
+ </div>
+
+<div class="form-group">
     <label for="email">Ваш email:</label>
     <input type="email" id="email"  
     placeholder="Введите email">
     </div>
-    <div>
+</div>
+
+
+    <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="15" rows="5" placeholder="Введите сообщение"></textarea>
+        <textarea id="message" cols="33" rows="5" placeholder="Введите сообщение"></textarea>
     </div>
-        <button type="submit">Отправить!</button>
-    </div>
+        <button class="btn"  type="submit">Отправить!
+        </button> 
+    
+</div>
+</div>
+</div>
 </body>
 </html>
